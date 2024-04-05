@@ -11,5 +11,16 @@ This Python script converts data stored in a CSV (Comma-Separated Values) file i
 ## Requirements
   - Python 3.x
   - **`csv`** module (comes pre-installed with Python)
+## Example
+
+Consider a CSV file named **`data.csv`** containing the following data:
+~~~~
+subject,predicate,object
+http://example.org/resource1,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://example.org/class1
+http://example.org/resource2,http://example.org/property1,"Literal value"
+
+~~~~
+
+
 ## License
 Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin). 
