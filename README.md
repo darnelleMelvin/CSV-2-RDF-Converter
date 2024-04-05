@@ -20,7 +20,10 @@ http://example.org/resource1,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,htt
 http://example.org/resource2,http://example.org/property1,"Literal value"
 
 ~~~~
-
-
+Running the script with this input will produce an output file named **`output.nt`** with the following content:
+~~~~
+<http://example.org/resource1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/class1> .
+<http://example.org/resource2> <http://example.org/property1> "Literal value"@en .
+~~~~
 ## License
 Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin). 
