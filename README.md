@@ -3,7 +3,7 @@ This Python script converts data stored in a CSV (Comma-Separated Values) file i
 ## Features
   - Converts CSV files into RDF triples in the .nt serialization format.
   - Supports both URI and literal values as objects.
-  - Adds language tags for English to string literals.
+  - Adds language tags for English to string literals (lang tag can be modified for other languages).
 ## How to Use
 1. **`Input CSV File`**: Provide the path to your CSV file.
 2. **`Run the Script`**: Execute the script **`csv2rdfConverter.py`** using Python 3.x. Make sure to have Python installed on your system.
