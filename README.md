@@ -12,3 +12,4 @@ This Python script converts data stored in a CSV (Comma-Separated Values) file i
   - Python 3.x
   - **`csv`** module (comes pre-installed with Python)
 ## License
+Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin). 
