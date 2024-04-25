@@ -19,7 +19,7 @@ def format_triple(subject, predicate, obj):
     if obj.startswith("http"):
         return f"<{subject}> <{predicate}> <{obj}> ."
     else:
-        # Escape single and double quotes within the object string
+        # Escape double quotes within the object string
         obj = obj.replace('"', '\\"')
         # Specify English language tag
         return f"<{subject}> <{predicate}> \"{obj}\"@en ."
