@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr  5 11:38:33 2024
+Created on Thu Apr 25 14:29:53 2024
 
+@author: dmelvin
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Apr  5 11:38:33 2024
 @author: dmelvin
 """
 
@@ -13,6 +19,8 @@ def format_triple(subject, predicate, obj):
     if obj.startswith("http"):
         return f"<{subject}> <{predicate}> <{obj}> ."
     else:
+        # Escape single and double quotes within the object string
+        obj = obj.replace('"', '\\"')
         # Specify English language tag
         return f"<{subject}> <{predicate}> \"{obj}\"@en ."
 
@@ -29,11 +37,7 @@ def convert_csv_to_nt(input_csv, output_nt):
                 print("Error: Invalid row format - should contain at least 3 columns")
 
 if __name__ == "__main__":
-    input_csv_file = "C:/Users/dmelvin/Downloads/construct.csv"  # Change this to the path of your input CSV file
-    output_nt_file = "C:/Users/dmelvin/Documents/graphBD_test/rdf_batch/output"  # Change this to the desired path of your output .nt file
-    
-    # Ensure the output file has the .nt extension
-    if not output_nt_file.endswith('.nt'):
-        output_nt_file += '.nt'
+    input_csv_file = "C:/Users/dmelvin/Downloads/Wikidata_funkDataSet4.csv"  # Change this to the path of your input CSV file
+    output_nt_file = "C:/Users/dmelvin/Documents/graphBD_test/rdf_batch/output2.nt"  # Change this to the desired path of your output .nt file
     
     convert_csv_to_nt(input_csv_file, output_nt_file)
