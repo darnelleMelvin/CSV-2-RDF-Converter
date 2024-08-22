@@ -37,7 +37,7 @@ def convert_csv_to_nt(input_csv, output_nt):
                 print("Error: Invalid row format - should contain at least 3 columns")
 
 if __name__ == "__main__":
-    input_csv_file = "C:/Users/dmelvin/Downloads/Wikidata_funkDataSet4.csv"  # Change this to the path of your input CSV file
-    output_nt_file = "C:/Users/dmelvin/Documents/graphBD_test/rdf_batch/output2.nt"  # Change this to the desired path of your output .nt file
+    input_csv_file = "FILE_PATH_TO_INPUT.csv"  # Change this to the path of your input CSV file
+    output_nt_file = "FILE_PATH_TO_OUTPUT.nt"  # Change this to the desired path of your output .nt file
     
     convert_csv_to_nt(input_csv_file, output_nt_file)
