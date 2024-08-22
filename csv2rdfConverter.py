@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Apr 25 14:29:53 2024
-
-@author: dmelvin
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Fri Apr  5 11:38:33 2024
 @author: dmelvin
 """
