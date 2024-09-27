@@ -5,7 +5,6 @@ Created on Fri Apr  5 11:38:33 2024
 """
 
 import csv
-import os
 
 def format_triple(subject, predicate, obj):
     # Check if object is a URI or literal
