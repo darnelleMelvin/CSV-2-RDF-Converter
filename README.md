@@ -44,8 +44,8 @@ If you encounter a bug or have a suggestion for improvement, please report it by
 4. **Stay Updated**: Once the issue is submitted, you can track updates, ask for clarification, or provide additional information as needed.
 
 Thank you for contributing to improving the project!
-
-
 ~~~~
+
 ## License
-Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin). 
+Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin).
+~~~~
