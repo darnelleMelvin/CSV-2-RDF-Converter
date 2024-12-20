@@ -47,5 +47,5 @@ Thank you for contributing to improving the project!
 ~~~~
 
 ## License
+
 Source code is made available under the [BSD 3-Clause License](LICENSE). For questions, contact [Darnelle Melvin](https://github.com/darnelleMelvin).
-~~~~
