@@ -1,5 +1,11 @@
 import csv
 from dateutil import parser
+import re
+
+
+def is_coordinate(value):
+    # Check if the value matches the pattern for coordinates
+    return re.match(r"^Point\(-?\d+(\.\d+)? -?\d+(\.\d+)?\)$", value)
 
 
 def format_triple(subject, predicate, obj):
@@ -13,6 +19,9 @@ def format_triple(subject, predicate, obj):
             # Format as xsd:dateTime
             return f"<{subject}> <{predicate}> \"{parsed_date.isoformat()}\"^^<http://www.w3.org/2001/XMLSchema#dateTime> ."
         except ValueError:
+            # Check if object is a coordinate
+            if is_coordinate(obj):
+                return f"<{subject}> <{predicate}> \"{obj}\"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ."
             # Escape single and double quotes within the object string
             obj = obj.replace('"', '\\"')
             # Specify English language tag
